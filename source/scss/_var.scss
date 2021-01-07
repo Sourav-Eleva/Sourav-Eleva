@@ -1,0 +1,55 @@
+
+
+
+$primary-font: 'GillSansNova-Light';
+$medium-font: 'GillSansNova-Medium';
+$bold-font: 'GillSansNova-Book';
+$headline-font: 'Libre Baskerville', serif;
+
+/* Color palette */
+$white-color: #fff;
+$black-color: #000;
+$button-color: #1429a0;
+$third-color:#cef7f8;
+$primary-color: #272a2d;
+$secondary-color: #41464a;
+$admin-content: #efeffb;
+$light-gray: #343434;
+$text-color: #171717;
+$text2-color: #767676;
+$banner-color: #6f6f6f;
+$gray-color: #999;
+$dark-gray: #131313;
+
+$body-color: #c3c3c3;
+$progress-color: #4f4f4f;
+$footer-text: #959595;
+$progress-line: #cf9614;
+$drop-line: #354ac1;
+$social-hover: #8d8d8d;
+$box-border: #dbdbdb;
+
+
+
+
+/* Variables */
+
+
+/* SLick override */
+
+.slick-loading .slick-list{
+    background: #fff url('../images/icons/ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/slick.woff') format('woff'), 
+    url('../fonts/slick.ttf') format('truetype'), 
+    url('../fonts/slick.svg#slick') format('svg');
+}

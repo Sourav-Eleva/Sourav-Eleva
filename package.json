@@ -1,0 +1,40 @@
+{
+  "name": "citrine_estates",
+  "version": "1.0.0",
+  "description": "Citrine estates theme wordpress",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Swaranan Singha Barman",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "jquery-match-height": "^0.7.2",
+    "jquery-parallax.js": "^1.5.0",
+    "magnific-popup": "^1.1.0",
+    "plyr": "^3.6.2",
+    "rellax": "^1.12.1",
+    "scrollmagic": "^2.0.7",
+    "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.5.2",
+    "webfontloader": "^1.6.28"
+  }
+}

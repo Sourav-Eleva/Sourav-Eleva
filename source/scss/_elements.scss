@@ -1,0 +1,572 @@
+
+/*--------------------------------------------------------
+Popup
+---------------------------------------------------------*/
+
+.mfp-bg {
+	z-index: 99993 !important;
+}
+
+.mfp-wrap {
+	z-index: 99998 !important;
+}
+
+
+
+.mfp-bg {}
+
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+
+
+/* overlay animate in */
+
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+
+
+/* overlay animate out */
+.mfp-bg {
+	opacity: 0.85;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.4s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+.mfp-iframe-holder .mfp-content,
+.mfp-inline-holder .mfp-content {
+	max-width: 1150px;
+}
+
+.mfp-close-btn-in .mfp-close {
+	background: $white-color;
+	color: $primary-color !important;
+	width: 40px;
+	text-align: center;
+	line-height: 40px;
+	padding: 0px;
+	height: 40px;
+	margin-right: 6px;
+	top: 0;
+}
+
+.mfp-inline-holder .mfp-content .mfp-close-btn-in .mfp-close {
+	margin-right: 0;
+}
+img.mfp-img{
+	padding: 0;
+}
+// .slick-loading .slick-list {
+// 	background: #fff url('../images/icons/ajax-loader.gif') center center no-repeat;
+// }
+
+
+/*--------------------------------------------------------
+Form elements
+---------------------------------------------------------*/
+
+.form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.wpcf7-validation-errors,
+.wpcf7-acceptance-missing {
+	background: #f7e700;
+	color: $text-color;
+	line-height: 1.2;
+	@include font-16;
+}
+
+
+
+.wpcf7-not-valid-tip {
+	display: block;
+	font-size: 14px !important;
+	padding: 2px 10px !important;
+	background: #f00 !important;
+	color: $white-color !important;
+}
+
+select {
+
+	&.form-control,
+	&.custom-select {
+		@include font-16;
+		-webkit-appearance: none;
+		border-radius: 0;
+		background-color: transparent;
+		background-image: url(../images/icons/dropdown-icon.svg);
+		background-repeat: no-repeat;
+		background-position: 94% center;
+		background-position: calc(100% - 15px) center;
+		background-size: 14px;
+		background-color: $white-color;
+		padding: 16.7px 10px;
+		padding-right: 35px;
+	}
+}
+
+.plyr__poster{
+	background-size: cover;
+}
+
+
+.ajax-loader {
+	position: absolute;
+}
+.form-group{
+	color: $primary-color;
+	display: flex;
+	margin: 0 -15px;
+	@include respond-below(xxxxs){
+		flex-direction: column;
+	}
+	.form-row{
+		flex: 1;
+		padding: 0 15px;
+		margin-bottom: 15px;
+		@include respond-below(xxxxs){
+			width: 100%;
+		}
+		.btn{
+			display: block;
+			margin: auto;
+		}
+	}
+}
+
+
+.form-control {
+	font-family: $primary-font;
+	display: block;
+	-webkit-appearance: none;
+	width: 100%;
+	@include font-18;
+	padding: 16.7px 10px;
+	border: none;
+	border-bottom: 1px solid $primary-color;
+	box-shadow: none;
+	position: relative;
+	transition: 0.5s all ease;
+	border-radius: 0px;
+	margin-bottom: 0px;
+	color: $text-color;
+
+	&::-webkit-input-placeholder {
+		color: #808080;
+		font-family: $primary-font;
+	}
+
+	&::-moz-placeholder {
+		color: #808080;
+		font-family: $primary-font;
+	}
+
+	&:-ms-input-placeholder {
+		color: #808080;
+		font-family: $primary-font;
+	}
+
+	&:-moz-placeholder {
+		color: #808080;
+		font-family: $primary-font;
+	}
+
+	&:focus {
+		border-color: $primary-color;
+
+		// &:after {
+		// 	background-position: right center;
+		// }
+	}
+
+	&.wpcf7-not-valid {
+		border-color: #f00;
+	}
+}
+
+textarea{
+	&.form-control{
+		resize: none;
+		height: 120px;
+		@include respond-below(xxxs){
+			height: 100px;
+		}
+	}
+}
+
+/* disable auto-zoom on iphone input field focus */
+@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio:0) {
+	input[type='text']:focus,
+	input[type='number']:focus,
+	textarea:focus {
+		font-size: 14px;
+	}
+	
+	select:focus,
+	textarea:focus,
+	input:focus {
+		font-size: 14px;
+	}
+}
+
+
+.custom-checkboxes {
+	.wpcf7-list-item{
+		margin-left: 0;
+		display: block;
+		padding-top: 2px;
+	}
+	.wpcf7-list-item-label{
+		display: block;
+		color: #808080;
+		font-size: 14px;
+	}
+	a{
+		color: #808080;
+		&:hover{
+			color: $primary-color;
+		}
+	}
+	>span {
+		position: relative;
+		padding-left: 35px;
+		margin-bottom: 10px;
+		display: inline-block;
+
+		input[type="checkbox"],
+		input[type="radio"] {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+
+			+span {
+				cursor: pointer;
+
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 4px;
+					height: 16px;
+					width: 16px;
+					border-radius: 0px;
+					cursor: pointer;
+					border: 1px solid $primary-color;
+				}
+			}
+
+			&:checked {
+				+span {
+					&:before {}
+
+					&:after {
+						position: absolute;
+						left: 1px;
+						top: 5px;
+						display: block;
+						content: "";
+						height: 16px;
+						width: 16px;
+						color: $white-color;
+						background: url(../images/icons/tick-icon.svg) center no-repeat;
+						background-size: contain;
+						margin: 0 auto;
+						text-align: center;
+						// line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------
+Buttons
+---------------------------------------------------------*/
+.btn {
+	font-family: $headline-font;
+	padding: 12px 20px;
+	@include font-18;
+	// font-weight: 500;
+	border: 1px solid $white-color;
+	background: $white-color;
+	color: $light-gray;
+	display: inline-block;
+	box-shadow: none;
+	transition: all .6s cubic-bezier(.51, .15, .21, 1);
+	cursor: pointer;
+	// text-transform: uppercase;
+	appearance: none;
+	-webkit-appearance: none;
+	border-radius: 0px;
+	position: relative;
+
+	//	letter-spacing: 1.2px;
+	&:before {
+		content: '';
+		pointer-events: none;
+		position: absolute;
+		border: 1px solid rgba($white-color, .3);
+		top: -10px;
+		right: -10px;
+		bottom: -10px;
+		left: -10px;
+		opacity: 0;
+		transition-duration: .3s;
+		transition-property: top, right, bottom, left;
+		content: none;
+	}
+
+	@include respond-below(xs) {
+		padding: 8px 15px
+	}
+
+	&:hover {
+		color: $white-color;
+		background: $light-gray;
+		border-color: $light-gray;
+
+		&:before {
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 1;
+		}
+	}
+
+	&.btn-primary {
+		border-color: $primary-color;
+		background: $primary-color;
+		color: $white-color;
+
+		&:before {
+			border-color: $primary-color;
+		}
+
+		&:hover {
+			color: $primary-color;
+			background: transparent;
+			border-color: $primary-color;
+		}
+	}
+
+	&.btn-primary-outline {
+		background: transparent;
+		border-color: $primary-color;
+		color: $primary-color;
+
+		&:before {
+			border-color: $primary-color;
+		}
+
+		&:hover {
+			background: $primary-color;
+			color: $white-color;
+			border-color: $primary-color;
+		}
+	}
+
+	&.btn-primary-line {
+		border-color: $primary-color;
+		border-width: 0;
+		// border-bottom-width: 1px;
+		background: transparent;
+		// background-image: linear-gradient(transparent 50%, $primary-color 50%);
+		background-size: 100% 200%;
+		background-position: top center;
+		color: $primary-color;
+		&:before{
+			content: none;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			margin: auto;
+			height: 1px;
+			background: $primary-color;
+			transform-origin: bottom center;
+			transition: all .6s cubic-bezier(.51, .15, .21, 1);
+		}
+
+		&:hover {
+			color: $primary-color;
+			background: transparent;
+			letter-spacing: 2.2px;
+			// background-image: linear-gradient(transparent 50%, $primary-color 50%);
+			// background-size: 100% 200%;
+			// background-position: bottom center;
+			// border-color: $primary-color;
+			&:after{
+				transform: scaleX(0.35);
+			}
+		}
+	}
+
+	// &.btn-secondary {
+	// 	border-color: $primary-color;
+	// 	background: $primary-color;
+	// 	color: $white-color;
+
+	// 	&:before {
+	// 		border-color: $primary-color;
+	// 	}
+
+	// 	&:hover {
+	// 		color: $primary-color;
+	// 		background: transparent;
+	// 		border-color: $primary-color;
+	// 	}
+	// }
+
+	// &.btn-secondary-outline {
+	// 	background: transparent;
+	// 	border-color: $primary-color;
+	// 	color: $primary-color;
+
+	// 	&:before {
+	// 		border-color: $primary-color;
+	// 	}
+
+	// 	&:hover {
+	// 		background: $primary-color;
+	// 		color: $white-color;
+	// 		border-color: $primary-color;
+	// 	}
+	// }
+
+	&.btn-default {
+		background: $white-color;
+		border-color: $white-color;
+		color: $primary-color;
+
+		&:before {
+			border-color: $text-color;
+			content: none;
+		}
+
+		&:hover {
+			border-color: $white-color;
+			background: transparent;
+			color: $white-color;
+		}
+	}
+	&.btn-default-outline {
+		background: transparent;
+		border-color: $white-color;
+		color: $white-color;
+
+		&:before {
+			border-color: $white-color;
+		}
+
+		&:hover {
+			background: $white-color;
+			color: $primary-color;
+			border-color: $white-color;
+		}
+	}
+	&:disabled{
+		background: transparent;
+		border-color: $gray-color;
+		color: $gray-color;
+		&:hover {
+			background: transparent;
+			border-color: $gray-color;
+			color: $gray-color;
+		}
+	}
+}
+.btn-block{
+	width: 100%;
+}
+
+.wpcf7-response-output{
+	@include font-16;
+	text-align: center;
+    margin: 20px 0;
+}
+
+/*--------------------------------------------------------
+Alerts / panels
+---------------------------------------------------------*/
+.notice-panel{
+	background: $primary-color;
+	padding: 10px 20px;
+	text-align: center;
+	margin: auto;
+	color: $white-color;
+	@include font-20;
+	font-family: $medium-font;
+	width: 95%;
+	max-width: 810px;
+}
+
+/*--------------------------------------------------------
+Tabs
+---------------------------------------------------------*/
+.tab-panels{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.tab-panel{
+		margin: 0 5px;
+		padding: 5px 20px;
+		// min-width: 280px;
+		text-align: center;
+		@include font-20;
+		font-family: $medium-font;
+		color: $gray-color;
+		cursor: pointer;
+		transition: 0.5s all ease;
+		&:hover{
+			color: $primary-color;
+		}
+		&:last-child{
+			@include respond-below(xxxs){
+				margin-bottom: 0;
+			}
+		}
+		&.active{
+			color: $primary-color;
+		}
+	}
+}
+.tab-contents{
+	padding: 45px 0;
+	.container{
+		@include respond-below(xxxs){
+			padding: 0 10px;
+		}
+	}
+	.tab-content{
+		display: none;
+		&.active{
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,113 @@
+// @import "font-mixins";
+
+// Custom mixings & extend
+
+
+@mixin sec-pad() {
+    padding: 80px 0;
+    @include respond-below(xs) {
+        padding: 40px 0;
+    }
+}
+
+
+@mixin heading(){
+    @include font-65;
+    font-family: $headline-font;
+    color: $primary-color;
+    margin: 0 0 30px;
+}
+
+.headline-area{
+    @include font-26;
+    color: $text-color;
+    margin-bottom: 35px;
+    // font-family: $bold-font;
+    text-align: center;
+    .highlight{
+        color: $primary-color;
+        @include font-20;
+        font-family: $bold-font;
+    }
+    h1,h2,h3,h4,h5,h6{
+        @include heading;
+        text-align: center;
+        margin: 0;
+        strong, b{
+            font-size: 0.9em;
+            font-family: $headline-font;
+            color: $white-color;
+            letter-spacing: 4px;
+            text-shadow: -1px -1px 0 $primary-color, 1px -1px 0 $primary-color, -1px 1px 0 $primary-color, 1px 1px 0 $primary-color;
+        }
+    }
+    &.split{
+        h1,h2,h3,h4,h5,h6{
+            > span{
+                display: block;
+                span{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.will-animate{
+    .headline-area{
+        &.split{
+            .highlight{
+                opacity: 0;
+                transform: translateY(50px);
+                transition: opacity 0.8s, transform 0.8s;
+                transition-delay: 0.3s;
+            }
+            h1,h2,h3,h4,h5,h6{
+                > span{
+                    span{
+                        opacity: 0;
+                        transform: translateX(50px);
+                        transition: opacity 0.8s, transform 0.8s;
+                    }
+                }
+                @for $j from 1 through 10 {
+                    >span {
+                        &:nth-child(#{$j}) {
+                            transition-delay: 0s + ($j * 0.05s);
+                            @for $k from 1 through 100 {
+                                $l: $j - 1;
+                                >span {
+                                    &:nth-child(#{$k}) {
+                                        transition-delay: 0.5s + $l + ($k * 0.05s);
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    &.animated{
+        .headline-area{
+            &.split{
+                .highlight{
+                    opacity: 1;
+                    transform: translateY(0);
+                    
+                }
+                h1,h2,h3,h4,h5,h6{
+                    
+                    > span{
+                        span{
+                            opacity: 1;
+                            transform: translateX(0);
+                            // transition: opacity 0.8s, transform 0.8s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
