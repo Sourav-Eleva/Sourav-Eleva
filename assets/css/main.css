@@ -15777,6 +15777,9 @@ body {
   background: url(../images/layer.jpg) 0 0 repeat;
   background-attachment: fixed; }
 
+h3, h4 {
+  text-transform: uppercase; }
+
 header, section, footer {
   width: 100%; }
 
@@ -15834,6 +15837,33 @@ header, section, footer {
         display: -moz-box;
         display: -ms-flexbox;
         display: flex; }
+        .main-block .bottom-header-block .botom_header_wrap .nav-wrap ul li.active a {
+          border-bottom: 5px solid #fa4f00; }
+        .main-block .bottom-header-block .botom_header_wrap .nav-wrap ul li .sub-menu {
+          position: absolute;
+          display: none;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -moz-box-orient: vertical;
+          -moz-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          top: 113px;
+          z-index: 9;
+          padding-top: 23px; }
+          .main-block .bottom-header-block .botom_header_wrap .nav-wrap ul li .sub-menu li {
+            display: block;
+            background-color: #373c40;
+            margin-left: 0px !important; }
+            .main-block .bottom-header-block .botom_header_wrap .nav-wrap ul li .sub-menu li a {
+              padding: 10px;
+              margin: 0;
+              font-size: 12px;
+              display: block;
+              border-bottom: 1px dashed #737779;
+              background-color: #373c40;
+              width: 100%; }
         .main-block .bottom-header-block .botom_header_wrap .nav-wrap ul li a {
           color: #fff;
           text-transform: uppercase;
@@ -16430,3 +16460,346 @@ header, section, footer {
         position: relative; }
         .main-block .page-breadcrumb ul li a {
           color: #fff; }
+    .main-block .page-breadcrumb.consulting_banner {
+      background: url(../images/page-title-banner2.jpg) 0 0 no-repeat;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100%;
+      -o-background-size: 100%;
+      background-size: 100%; }
+  .main-block .main_body {
+    width: 100%; }
+    .main-block .main_body .content_wraper_main {
+      width: 100%; }
+      .main-block .main_body .content_wraper_main .main_page_title {
+        padding: 25px 30px;
+        font-size: 40px;
+        text-transform: capitalize;
+        color: #fff;
+        background: -webkit-gradient(linear, left top, left bottom, from(#f94500), to(#fd8100));
+        background: linear-gradient(#f94500, #fd8100);
+        background: -webkit-linear-gradient(#f94500, #fd8100);
+        background: -moz-linear-gradient(#f94500, #fd8100);
+        background: -o-linear-gradient(#f94500, #fd8100);
+        background: -ms-linear-gradient(#f94500, #fd8100);
+        margin-bottom: 15px; }
+        .main-block .main_body .content_wraper_main .main_page_title h1 {
+          font-size: 36px;
+          font-weight: 400;
+          font-weight: 700; }
+          @media (max-width: 1440px) {
+            .main-block .main_body .content_wraper_main .main_page_title h1 {
+              font-size: 26px; } }
+          @media (max-width: 649px) {
+            .main-block .main_body .content_wraper_main .main_page_title h1 {
+              font-size: 20px; } }
+      .main-block .main_body .content_wraper_main .course_page {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .main-block .main_body .content_wraper_main .course_page.consultancy_page .page_content {
+          width: 63.6%; }
+        .main-block .main_body .content_wraper_main .course_page.consultancy_page .page_slider {
+          width: 35%; }
+        .main-block .main_body .content_wraper_main .course_page .page_content {
+          width: 70%; }
+          .main-block .main_body .content_wraper_main .course_page .page_content .nebosh_top_header {
+            padding: 45px 30px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f7f7f8));
+            background: linear-gradient(#fefefe, #f7f7f8);
+            background: -webkit-linear-gradient(#fefefe, #f7f7f8);
+            background: -moz-linear-gradient(#fefefe, #f7f7f8);
+            background: -o-linear-gradient(#fefefe, #f7f7f8);
+            background: -ms-linear-gradient(#fefefe, #f7f7f8);
+            -webkit-box-shadow: 1px 8px 15px rgba(241, 241, 241, 0.8);
+            -moz-box-shadow: 1px 8px 15px rgba(241, 241, 241, 0.8);
+            box-shadow: 1px 8px 15px rgba(241, 241, 241, 0.8);
+            border-bottom: 1px solid #f1f1f1;
+            font-size: 30px;
+            text-transform: initial;
+            padding-right: 120px;
+            position: relative;
+            margin-bottom: 0;
+            font-weight: 700; }
+            .main-block .main_body .content_wraper_main .course_page .page_content .nebosh_top_header:after {
+              position: absolute;
+              content: url(../images/right-arrow-btn.png);
+              display: block;
+              right: 30px;
+              bottom: 20px; }
+          .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field {
+            padding: 45px 30px;
+            font-size: 16px;
+            background-color: #fff; }
+            .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > h3 {
+              font-size: 15px;
+              margin-bottom: 20px; }
+            .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list {
+              list-style: none; }
+              .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list li {
+                display: block;
+                margin-bottom: 20px; }
+                .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list li h4 {
+                  padding: 20px 50px 20px 20px;
+                  margin: 0;
+                  position: relative;
+                  cursor: pointer;
+                  text-transform: initial;
+                  border: 1px solid #fdd2bf;
+                  -webkit-border-radius: 3px;
+                  -moz-border-radius: 3px;
+                  border-radius: 3px; }
+                  .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list li h4:after {
+                    position: absolute;
+                    display: block;
+                    height: 100%;
+                    content: url(../images/arrows1.png);
+                    top: 17px;
+                    right: 20px; }
+                .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list li .info-collapse {
+                  display: none;
+                  padding: 20px 20px 0;
+                  font-size: 14px; }
+                  .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list li .info-collapse p {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 1.5; }
+                    .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field > ul.nebosh-list li .info-collapse p a {
+                      color: #000;
+                      font-weight: 700; }
+            .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field .enquiry-box {
+              margin-top: 20px;
+              border: 1px solid #fdd2bf;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              padding-top: 20px;
+              padding-bottom: 15px;
+              text-align: center; }
+              .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field .enquiry-box h4 {
+                color: #f94900;
+                width: 240px;
+                margin: 0 auto 35px;
+                font-size: 16px;
+                text-transform: initial;
+                position: relative;
+                font-weight: 700; }
+                .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field .enquiry-box h4:after {
+                  position: absolute;
+                  display: block;
+                  content: "";
+                  height: 2px;
+                  width: 30px;
+                  bottom: -15px;
+                  right: 45%;
+                  background-color: #f94900; }
+              .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field .enquiry-box p {
+                max-width: 360px;
+                margin: 0 auto 10px;
+                font-size: 13px;
+                text-transform: initial;
+                line-height: 1.5; }
+                .main-block .main_body .content_wraper_main .course_page .page_content .page_content_field .enquiry-box p span a {
+                  color: #000; }
+        .main-block .main_body .content_wraper_main .course_page .page_slider {
+          width: 25%; }
+          .main-block .main_body .content_wraper_main .course_page .page_slider .register-btn {
+            margin-bottom: 5px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .register-btn:after {
+              position: absolute;
+              display: block;
+              height: 100%;
+              content: url(../images/arrows4.png);
+              top: 17px;
+              right: 20px; }
+          .main-block .main_body .content_wraper_main .course_page .page_slider .call-enrollment {
+            position: relative;
+            padding-right: 60px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#656b71), to(#3e4348));
+            background: linear-gradient(#656b71, #3e4348);
+            background: -webkit-linear-gradient(#656b71, #3e4348);
+            background: -moz-linear-gradient(#656b71, #3e4348);
+            background: -o-linear-gradient(#656b71, #3e4348);
+            background: -ms-linear-gradient(#656b71, #3e4348);
+            color: #fff;
+            font-size: 16px;
+            padding: 25px;
+            text-transform: capitalize; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .call-enrollment h4 {
+              font-size: 18.53px;
+              text-transform: initial;
+              text-transform: capitalize;
+              margin-bottom: 20px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .call-enrollment p {
+              margin-bottom: 0;
+              font-size: 33px;
+              line-height: 1;
+              font-weight: 700; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .call-enrollment:after {
+              content: url(../images/telephone5.png);
+              top: 46px;
+              position: absolute;
+              display: block;
+              height: 100%;
+              right: 20px; }
+          .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry {
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 5px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry h4 {
+              font-size: 29px;
+              color: #f94700;
+              text-transform: initial;
+              margin-bottom: 20px;
+              font-weight: 700; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry h4 span {
+                display: block;
+                font-size: 20px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry ul {
+              margin-bottom: 20px;
+              list-style: none; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry ul li {
+                position: relative;
+                padding: 10px 10px 10px 50px;
+                margin-bottom: 10px;
+                font-weight: 300; }
+                .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry ul li:before {
+                  content: url(../images/sound.png);
+                  top: 5px;
+                  left: 0px;
+                  position: absolute; }
+          .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row {
+              width: 100%; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row label {
+                width: 100%;
+                margin-bottom: 10px;
+                float: left;
+                font-size: 16px;
+                font-weight: 700; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row input {
+                width: 100%;
+                height: 50px;
+                border: 1px solid #cfd1d2;
+                color: #cfd1d2;
+                outline: none;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                padding: 15px; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row input[type="submit"] {
+                background: -webkit-gradient(linear, left top, left bottom, from(#f94500), to(#fd8100));
+                background: linear-gradient(#f94500, #fd8100);
+                background: -webkit-linear-gradient(#f94500, #fd8100);
+                background: -moz-linear-gradient(#f94500, #fd8100);
+                background: -o-linear-gradient(#f94500, #fd8100);
+                background: -ms-linear-gradient(#f94500, #fd8100);
+                color: #fff;
+                border: 1px solid #f94500;
+                cursor: pointer;
+                font-size: 1em;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-size: 16px; }
+                .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row input[type="submit"]:hover {
+                  background: #fff;
+                  color: #f94500;
+                  border: 1px solid #f94500;
+                  cursor: pointer; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row select {
+                width: 100%;
+                height: 50px;
+                border: 1px solid #cfd1d2;
+                color: #cfd1d2;
+                outline: none;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                padding: 15px; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-enquiry-form .consultancy_form .form_row + .form_row {
+                margin-top: 20px; }
+          .main-block .main_body .content_wraper_main .course_page .page_slider .course-summary {
+            margin-bottom: 5px;
+            background: #fff;
+            padding: 25px 0 10px 0; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .course-summary h3 {
+              padding: 0 25px 0 25px;
+              margin-bottom: 5px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .course-summary ul {
+              padding: 10px;
+              font-size: 12px;
+              list-style: none; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .course-summary ul li {
+                padding: 5px;
+                padding-left: 31px;
+                position: relative;
+                line-height: 20px; }
+                .main-block .main_body .content_wraper_main .course_page .page_slider .course-summary ul li:before {
+                  position: absolute;
+                  display: inline-block;
+                  background-image: url(../images/sound.png);
+                  -webkit-background-size: contain;
+                  -moz-background-size: contain;
+                  -o-background-size: contain;
+                  background-size: contain;
+                  background-position-y: 20px;
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  top: 5px;
+                  left: 5px;
+                  margin-right: 8px; }
+          .main-block .main_body .content_wraper_main .course_page .page_slider .accreditation {
+            width: 100%;
+            margin-top: 5px; }
+            .main-block .main_body .content_wraper_main .course_page .page_slider .accreditation h4 {
+              background: -webkit-gradient(linear, left top, left bottom, from(#656b71), to(#3e4348));
+              background: linear-gradient(#656b71, #3e4348);
+              background: -webkit-linear-gradient(#656b71, #3e4348);
+              background: -moz-linear-gradient(#656b71, #3e4348);
+              background: -o-linear-gradient(#656b71, #3e4348);
+              background: -ms-linear-gradient(#656b71, #3e4348);
+              color: #fff;
+              font-size: 16px;
+              padding: 25px;
+              text-transform: capitalize; }
+              .main-block .main_body .content_wraper_main .course_page .page_slider .accreditation h4 > div {
+                padding: 10px;
+                background: #fff;
+                text-align: center; }
+                .main-block .main_body .content_wraper_main .course_page .page_slider .accreditation h4 > div img {
+                  max-width: 100%;
+                  display: inline-block;
+                  margin: 0 auto; }
+  .main-block .register-btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#009245), to(#006822));
+    background: linear-gradient(#009245, #006822);
+    background: -webkit-linear-gradient(#009245, #006822);
+    background: -moz-linear-gradient(#009245, #006822);
+    background: -o-linear-gradient(#009245, #006822);
+    background: -ms-linear-gradient(#009245, #006822);
+    color: #fff;
+    border: 1px solid #006822;
+    text-transform: capitalize;
+    font-size: 16px;
+    position: relative;
+    padding: 25px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700; }
+    .main-block .register-btn:hover {
+      background: #fff;
+      color: #006822; }

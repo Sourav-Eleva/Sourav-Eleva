@@ -58,5 +58,23 @@ function resetProgressBar() {
     transition: "width 0s"
   });
 }
+
+// Custom js
+
+$('.nebosh-list li h4').click(function(){
+  if($(this).next().is(":hidden")){
+    $('.info-collapse').hide(400);
+    $(this).next().show(400);
+  }else{
+    $(this).next().hide(400);
+  }
+  
+  
+  });
+  // $(".nav-wrap ul li a").click(function(){
+  //   console.log("raja");
+  //   $(this).children(".sub-menu").show();
+  // });
+
 });
 

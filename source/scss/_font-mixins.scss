@@ -154,6 +154,16 @@
 		font-size: 20px;
 	}
 }
+@mixin font-36 {
+	font-size: 36px;
+	font-weight: 400;
+	@include respond-below(md) {
+		font-size: 26px;
+	}
+	@include respond-below(xxxs) {
+		font-size: 20px;
+	}
+}
 @mixin font-35 {
 	font-size: 35px;
 	font-weight: 400;
