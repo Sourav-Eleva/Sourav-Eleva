@@ -768,6 +768,116 @@ header, section,footer{
 						width: 35%;
 					}
 				}
+				&.contact_page{
+					margin-top: 50px;
+				}
+				.page_content_field{
+					width: 100%;
+					padding: 45px 30px;
+					font-size: 16px;
+					background-color: #fff;
+					.contact_content{
+						h1{
+							font-size: 14px;
+						}
+						p{
+							margin-bottom: 15px;
+							font-size: 14px;
+							line-height: 1.5;
+						}
+						h3{
+							margin-bottom: 10px;
+							font-weight: 600;
+							font-size: 15px;
+						}
+						.conatct_form_block{
+							width: 100%;
+							.contact_form_wrap{
+								padding: 25px;
+								border: 1px solid #d7cfcd;
+								border-radius: 3px;
+								background: #fbf9f9;
+								color: #666;
+								.form_row{
+									width: 100%;
+									&+ .form_row{
+										margin-top: 20px;
+									}
+									label{
+										width: 100%;
+										font-size: 14px;
+										margin-bottom: 5px;
+										float: left;
+									}
+									input{
+										width: 100%;
+										padding: 15px 10px;
+										border: 1px solid #ddd8d5;
+										color: #787878;
+										outline: none;
+									}
+									input[type="submit"]{
+										background: linear-gradient(#656b71,#3e4348);
+										background: -webkit-linear-gradient(#656b71,#3e4348);
+										background: -moz-linear-gradient(#656b71,#3e4348);
+										background: -o-linear-gradient(#656b71,#3e4348);
+										background: -ms-linear-gradient(#656b71,#3e4348);
+										color: #fff;
+										font-size: 16px;
+										padding: 25px;
+										text-transform: capitalize;
+										cursor: pointer;
+										padding: 15px;
+										&:hover{
+											background: #f94500;
+    										color: #fff;
+										}
+									}
+									textarea{
+										width: 100%;
+										padding: 15px 10px;
+										border: 1px solid #ddd8d5;
+										color: #787878;
+										outline: none;
+									}
+								}
+							}
+						}
+					}
+					ul{
+						list-style: none;
+						li{
+							&.listing_item {
+								margin-bottom: 30px;
+								display: flex;
+								.content_img{
+									width: 20%;
+								}
+								.content_text{
+									width: 80%;
+									a{
+										font-size: 29px;
+										color: #fa4f00;
+										padding-bottom: 15px;
+										font-weight: bold;
+										display: block;
+									}
+									p{
+										line-height: 22px;
+										span{
+											a{
+												color: #fa4f00;
+												font-size: 14px;
+												display: contents;
+											}
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
 				.page_content{
 					width: 70%;
 					// background-color: #fff;
@@ -816,6 +926,13 @@ header, section,footer{
 										text-transform: initial;
 										border: 1px solid #fdd2bf;
 										border-radius: 3px;
+										strong{
+											font-size: 22px;
+										}
+										span{
+											font-size: 13px;
+											margin-left: 5px;
+										}
 										&:after{
 											position: absolute;
 											display: block;
@@ -824,11 +941,27 @@ header, section,footer{
 											top: 17px;
 											right: 20px;
 										}
+										&.selected_box{
+											&:after{
+												content: url(../images/arrows2.png);
+											}
+										}
 									}
 									.info-collapse{
 										display: none;
 										padding: 20px 20px 0;
 										font-size: 14px;
+										ol{
+											// list-style: none;
+											margin: 10px 0 10px 20px;
+											// list-style-type: disc;
+											li{
+												margin-bottom: 10px;
+												display: list-item;
+												line-height: 1.5;
+												padding-left: 5px;
+											}
+										}
 										p{
 											margin-bottom: 10px;
 											font-size: 14px;
@@ -1107,6 +1240,19 @@ header, section,footer{
 			color: #006822;
 		}
 	}
+	.map_block{
+		width: 100%;
+	}
+}
+.selected_box{
+	color: #fff;
+    text-transform: initial;
+    color: #fff;
+    background: linear-gradient(#f94500,#fd8100);
+    background: -webkit-linear-gradient(#f94500,#fd8100);
+    background: -moz-linear-gradient(#f94500,#fd8100);
+    background: -o-linear-gradient(#f94500,#fd8100);
+    background: -ms-linear-gradient(#f94500,#fd8100);
 }
 
 	
