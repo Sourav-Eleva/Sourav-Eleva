@@ -16510,6 +16510,61 @@ header, section, footer {
           padding: 45px 30px;
           font-size: 16px;
           background-color: #fff; }
+          .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box {
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box .nebosh-testimonial-box {
+              width: 48%;
+              background-color: #fbf9f9;
+              padding: 20px;
+              border: 1px solid #ece9e7;
+              border-bottom: 5px solid #ed1c24;
+              margin-top: 10px; }
+              .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box .nebosh-testimonial-box h4 {
+                margin-bottom: 25px;
+                font-weight: 700; }
+              .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box .nebosh-testimonial-box .testimonial-image {
+                border: 1px solid #ece9e7;
+                background: #fff;
+                text-align: center;
+                padding: 5px; }
+              .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box .nebosh-testimonial-box .testimonial {
+                margin-top: 15px; }
+                .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box .nebosh-testimonial-box .testimonial p {
+                  margin-bottom: 10px;
+                  font-size: 14px;
+                  line-height: 1.5; }
+                .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box .nebosh-testimonial-box .testimonial h5 {
+                  text-transform: capitalize;
+                  font-weight: 600;
+                  font-size: 14px; }
+          .main-block .main_body .content_wraper_main .course_page .page_content_field.about_us_pg h2 {
+            text-align: center;
+            font-size: 22px;
+            padding-bottom: 15px;
+            font-weight: 700;
+            color: #000000; }
+          .main-block .main_body .content_wraper_main .course_page .page_content_field.about_us_pg p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.5; }
+          .main-block .main_body .content_wraper_main .course_page .page_content_field.about_us_pg h4 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #41464a;
+            font-weight: 700; }
           .main-block .main_body .content_wraper_main .course_page .page_content_field .contact_content h1 {
             font-size: 14px; }
           .main-block .main_body .content_wraper_main .course_page .page_content_field .contact_content p {
