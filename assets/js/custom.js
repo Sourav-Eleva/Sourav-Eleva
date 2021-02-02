@@ -71,6 +71,9 @@ $('.nebosh-list li h4').click(function(){
   
   
   });
+
+  $(".owl-prev").append('<img src="../assets/images/left_slider_arrow.png"/>');
+  $(".owl-next").append('<img src="../assets/images/right_slider_arrow.png"/>');
   // $(".nav-wrap ul li a").click(function(){
   //   console.log("raja");
   //   $(this).children(".sub-menu").show();

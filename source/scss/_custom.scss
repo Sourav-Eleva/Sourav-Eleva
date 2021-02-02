@@ -254,6 +254,24 @@ header, section,footer{
 			  left: 3%;
 			  top: 50%;
 			  transform: translate(-50%, -50%);
+			  font-size: 0px;
+		  }
+		  .owl-prev,.owl-next{
+			// position: absolute;
+			// top: 35%;
+			background-color: #000 !important;
+			opacity: .4;
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			cursor: pointer;
+			background-image: url(../images/left_slider_arrow.png);
+			background-position: center;
+			background-repeat: no-repeat;
+			font-size: 0px;
+		  }
+		  .owl-prev img,.owl-next img{
+			height: 100%;
 		  }
 		  .owl-theme .owl-nav{
 			  margin-top: 0px;
@@ -263,6 +281,7 @@ header, section,footer{
 			right: 3%;
 			top: 50%;
 			transform: translate(-50%, -50%);
+			font-size: 0px;
 		  }
 	}
 	.marque-block{
@@ -439,6 +458,7 @@ header, section,footer{
 						left: 38px;
 						// transform: translate(-50%, -50%);
 						bottom: -7px;
+					
 					}
 					
 				}
@@ -517,6 +537,87 @@ header, section,footer{
 					text-decoration: none;
 				}
 			}
+			// Table Responsive
+			table {
+				border: 1px solid #ccc;
+				border-collapse: collapse;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				table-layout: fixed;
+			  }
+			  
+			  table caption {
+				font-size: 1.5em;
+				margin: .5em 0 .75em;
+			  }
+			  
+			  table tr {
+				background-color: #f8f8f8;
+				border: 1px solid #ddd;
+				padding: .35em;
+			  }
+			  
+			  table th,
+			  table td {
+				padding: .625em;
+				text-align: center;
+			  }
+			  
+			  table th {
+				font-size: .85em;
+				letter-spacing: .1em;
+				text-transform: uppercase;
+			  }
+			  
+			  @media screen and (max-width: 600px) {
+				table {
+				  border: 0;
+				}
+			  
+				table caption {
+				  font-size: 1.3em;
+				}
+				
+				table thead {
+				  border: none;
+				  clip: rect(0 0 0 0);
+				  height: 1px;
+				  margin: -1px;
+				  overflow: hidden;
+				  padding: 0;
+				  position: absolute;
+				  width: 1px;
+				}
+				
+				table tr {
+				  border-bottom: 3px solid #ddd;
+				  display: block;
+				  margin-bottom: .625em;
+				}
+				
+				table td {
+				  border-bottom: 1px solid #ddd;
+				  display: block;
+				  font-size: .8em;
+				  text-align: right;
+				}
+				
+				table td::before {
+				  /*
+				  * aria-label has no advantage, it won't be read inside a table
+				  content: attr(aria-label);
+				  */
+				  content: attr(data-label);
+				  float: left;
+				  font-weight: bold;
+				  text-transform: uppercase;
+				}
+				
+				table td:last-child {
+				  border-bottom: 0;
+				}
+			  }
 		}
 		.seat_open{
 			background-color: #00b050;
@@ -869,10 +970,63 @@ header, section,footer{
 					font-weight: 700;
 				}
 			}
+			.link_page{
+				width: 100%;
+				background-color: #fff;
+				padding: 45px 30px;
+				.brochure_block{
+					width: 100%;
+					ul{
+						list-style: none;
+						width: 100%;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						
+						li{
+							width: 48%;
+							display: flex;
+							align-items: center;
+							font-size: 18px;
+							min-height: 130px;
+							background-image: url(../images/pdf_img.png);
+							background-position: 20px center;
+							background-repeat: no-repeat;
+							background-color: #fbf9f9;
+							border-radius: 3px;
+							border: 1px solid #ece9e7;
+							position: relative;
+							justify-content: space-between;
+							a{
+								&:first-child{
+									padding: 30px 80px 30px 90px;
+									font-size: 17px;
+									display: inline-block;
+									font-weight: 700;
+									.result-title{
+										max-height: 35px;
+										overflow: hidden;
+										display: inline-block;
+									}
+									.batch{
+										display: block;
+										font-size: 14px;
+										line-height: 2;
+									}
+								}
+								&.download_tag{
+									
+								}
+							}
+						}
+					}
+				}
+			}
 			.course_page{
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
+				
 				&.blog_alt_page{
 					font-size: 22px;
 					padding-bottom: 15px;
@@ -930,6 +1084,52 @@ header, section,footer{
 					padding: 45px 30px;
 					font-size: 16px;
 					background-color: #fff;
+					
+					&.galery_main_block{
+						background-color: transparent !important;
+					}
+					.gallery_block{
+						width: 100%;
+
+						ul{
+							list-style: none;
+							width: 100%;
+							display: flex;
+							flex-wrap: wrap;
+							justify-content: space-between;
+							li{
+								width: 24.5%;
+								a{
+									button{
+										font-size: 11px;
+										border: 1px solid #51565b;
+										width: 100%;
+										padding: 15px 25px 15px 10px;
+										float: none;
+										margin-bottom: 10px;
+										text-align: left;
+										position: relative;
+										text-transform: capitalize;
+										background-color: #51565b;
+										border-radius: 0;
+										color: #fff;
+										cursor: pointer;
+										&:hover{
+											color: #51565b;
+											background-color: #fff;
+										}
+										&:after{
+											position: absolute;
+											display: block;
+											content: url(../images/arrow-5.png);
+											top: 12px;
+											right: 20px;
+										}
+									}
+								}
+							}
+						}
+					}
 					.testimonial-box{
 						width: 100%;
 						display: flex;
@@ -1920,6 +2120,64 @@ header, section,footer{
 							letter-spacing: inherit;
 							text-transform: none;
 							font-size: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+	.wpd-thread-list{
+		width: 100%;
+		.wpd-comment{
+			width: 100%;
+			.wpd-comment-wrap{
+				width: 100%;
+				margin-top: 20px;
+				.wpd-comment-header{
+					width: 100%;
+					display: flex;
+					align-items: center;
+					.wpd-user-info{
+						padding-left: 20px;
+						.wpd-uinfo-top{
+						
+							.wpd-comment-author{
+								margin-bottom: 5px;
+								a{
+									color:#07b290;
+									
+								}
+							}
+						}
+					}
+				}
+				.wpd-comment-text{
+					width: 100%;
+					margin: 8px 0 5px 0;
+					color: #777;
+				}
+				.wpd-comment-footer{
+					.wpd-vote{
+						display: flex;
+						span{
+							svg{
+								fill: #888888;
+							}
+							&:nth-child(1){
+								width: 16px;
+								height: 16px;
+								opacity: 0.7;
+								cursor: pointer;
+							}
+							&:nth-child(3){
+								width: 16px;
+								height: 16px;
+								opacity: 0.7;
+								cursor: pointer;
+							}
+							&+ span{
+								margin-left: 5px;
+							}
 						}
 					}
 				}

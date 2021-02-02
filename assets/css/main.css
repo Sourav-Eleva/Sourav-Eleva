@@ -15982,7 +15982,23 @@ header, section, footer {
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      font-size: 0px; }
+    .main-block .slider-section .owl-prev, .main-block .slider-section .owl-next {
+      background-color: #000 !important;
+      opacity: .4;
+      height: 40px;
+      width: 40px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      cursor: pointer;
+      background-image: url(../images/left_slider_arrow.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      font-size: 0px; }
+    .main-block .slider-section .owl-prev img, .main-block .slider-section .owl-next img {
+      height: 100%; }
     .main-block .slider-section .owl-theme .owl-nav {
       margin-top: 0px; }
     .main-block .slider-section .owl-nav .owl-next {
@@ -15993,7 +16009,8 @@ header, section, footer {
       -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+      font-size: 0px; }
   .main-block .marque-block {
     width: 100%;
     background-color: #41464a;
@@ -16257,6 +16274,62 @@ header, section, footer {
           padding: 8px 15px;
           text-transform: uppercase;
           text-decoration: none; }
+      .main-block .table_container .training_calender-wrap table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed; }
+      .main-block .table_container .training_calender-wrap table caption {
+        font-size: 1.5em;
+        margin: .5em 0 .75em; }
+      .main-block .table_container .training_calender-wrap table tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: .35em; }
+      .main-block .table_container .training_calender-wrap table th,
+      .main-block .table_container .training_calender-wrap table td {
+        padding: .625em;
+        text-align: center; }
+      .main-block .table_container .training_calender-wrap table th {
+        font-size: .85em;
+        letter-spacing: .1em;
+        text-transform: uppercase; }
+      @media screen and (max-width: 600px) {
+        .main-block .table_container .training_calender-wrap table {
+          border: 0; }
+        .main-block .table_container .training_calender-wrap table caption {
+          font-size: 1.3em; }
+        .main-block .table_container .training_calender-wrap table thead {
+          border: none;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px; }
+        .main-block .table_container .training_calender-wrap table tr {
+          border-bottom: 3px solid #ddd;
+          display: block;
+          margin-bottom: .625em; }
+        .main-block .table_container .training_calender-wrap table td {
+          border-bottom: 1px solid #ddd;
+          display: block;
+          font-size: .8em;
+          text-align: right; }
+        .main-block .table_container .training_calender-wrap table td::before {
+          /*
+				  * aria-label has no advantage, it won't be read inside a table
+				  content: attr(aria-label);
+				  */
+          content: attr(data-label);
+          float: left;
+          font-weight: bold;
+          text-transform: uppercase; }
+        .main-block .table_container .training_calender-wrap table td:last-child {
+          border-bottom: 0; } }
     .main-block .table_container .seat_open {
       background-color: #00b050;
       color: #fff; }
@@ -16571,6 +16644,69 @@ header, section, footer {
           @media (max-width: 649px) {
             .main-block .main_body .content_wraper_main .main_page_title h1 {
               font-size: 20px; } }
+      .main-block .main_body .content_wraper_main .link_page {
+        width: 100%;
+        background-color: #fff;
+        padding: 45px 30px; }
+        .main-block .main_body .content_wraper_main .link_page .brochure_block {
+          width: 100%; }
+          .main-block .main_body .content_wraper_main .link_page .brochure_block ul {
+            list-style: none;
+            width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            .main-block .main_body .content_wraper_main .link_page .brochure_block ul li {
+              width: 48%;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -moz-box-align: center;
+              -ms-flex-align: center;
+              align-items: center;
+              font-size: 18px;
+              min-height: 130px;
+              background-image: url(../images/pdf_img.png);
+              background-position: 20px center;
+              background-repeat: no-repeat;
+              background-color: #fbf9f9;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+              border: 1px solid #ece9e7;
+              position: relative;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -moz-box-pack: justify;
+              -ms-flex-pack: justify;
+              justify-content: space-between; }
+              .main-block .main_body .content_wraper_main .link_page .brochure_block ul li a:first-child {
+                padding: 30px 80px 30px 90px;
+                font-size: 17px;
+                display: inline-block;
+                font-weight: 700; }
+                .main-block .main_body .content_wraper_main .link_page .brochure_block ul li a:first-child .result-title {
+                  max-height: 35px;
+                  overflow: hidden;
+                  display: inline-block; }
+                .main-block .main_body .content_wraper_main .link_page .brochure_block ul li a:first-child .batch {
+                  display: block;
+                  font-size: 14px;
+                  line-height: 2; }
       .main-block .main_body .content_wraper_main .course_page {
         width: 100%;
         display: -webkit-box;
@@ -16630,6 +16766,53 @@ header, section, footer {
           padding: 45px 30px;
           font-size: 16px;
           background-color: #fff; }
+          .main-block .main_body .content_wraper_main .course_page .page_content_field.galery_main_block {
+            background-color: transparent !important; }
+          .main-block .main_body .content_wraper_main .course_page .page_content_field .gallery_block {
+            width: 100%; }
+            .main-block .main_body .content_wraper_main .course_page .page_content_field .gallery_block ul {
+              list-style: none;
+              width: 100%;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+              -webkit-box-pack: justify;
+              -webkit-justify-content: space-between;
+              -moz-box-pack: justify;
+              -ms-flex-pack: justify;
+              justify-content: space-between; }
+              .main-block .main_body .content_wraper_main .course_page .page_content_field .gallery_block ul li {
+                width: 24.5%; }
+                .main-block .main_body .content_wraper_main .course_page .page_content_field .gallery_block ul li a button {
+                  font-size: 11px;
+                  border: 1px solid #51565b;
+                  width: 100%;
+                  padding: 15px 25px 15px 10px;
+                  float: none;
+                  margin-bottom: 10px;
+                  text-align: left;
+                  position: relative;
+                  text-transform: capitalize;
+                  background-color: #51565b;
+                  -webkit-border-radius: 0;
+                  -moz-border-radius: 0;
+                  border-radius: 0;
+                  color: #fff;
+                  cursor: pointer; }
+                  .main-block .main_body .content_wraper_main .course_page .page_content_field .gallery_block ul li a button:hover {
+                    color: #51565b;
+                    background-color: #fff; }
+                  .main-block .main_body .content_wraper_main .course_page .page_content_field .gallery_block ul li a button:after {
+                    position: absolute;
+                    display: block;
+                    content: url(../images/arrow-5.png);
+                    top: 12px;
+                    right: 20px; }
           .main-block .main_body .content_wraper_main .course_page .page_content_field .testimonial-box {
             width: 100%;
             display: -webkit-box;
@@ -17724,6 +17907,55 @@ header, section, footer {
               letter-spacing: inherit;
               text-transform: none;
               font-size: 1em; }
+  .wpd-thread-wrapper .wpd-thread-list {
+    width: 100%; }
+    .wpd-thread-wrapper .wpd-thread-list .wpd-comment {
+      width: 100%; }
+      .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap {
+        width: 100%;
+        margin-top: 20px; }
+        .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-header {
+          width: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-header .wpd-user-info {
+            padding-left: 20px; }
+            .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-header .wpd-user-info .wpd-uinfo-top .wpd-comment-author {
+              margin-bottom: 5px; }
+              .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-header .wpd-user-info .wpd-uinfo-top .wpd-comment-author a {
+                color: #07b290; }
+        .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-text {
+          width: 100%;
+          margin: 8px 0 5px 0;
+          color: #777; }
+        .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-footer .wpd-vote {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-footer .wpd-vote span svg {
+            fill: #888888; }
+          .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-footer .wpd-vote span:nth-child(1) {
+            width: 16px;
+            height: 16px;
+            opacity: 0.7;
+            cursor: pointer; }
+          .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-footer .wpd-vote span:nth-child(3) {
+            width: 16px;
+            height: 16px;
+            opacity: 0.7;
+            cursor: pointer; }
+          .wpd-thread-wrapper .wpd-thread-list .wpd-comment .wpd-comment-wrap .wpd-comment-footer .wpd-vote span + span {
+            margin-left: 5px; }
 
 @media only screen and (min-width: 1190px) {
   .sub-header {
