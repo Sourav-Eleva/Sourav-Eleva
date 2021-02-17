@@ -37,7 +37,7 @@ function initSlider() {
 
 }
 
-
+$(".chosen-select").chosen();
 
 
 });

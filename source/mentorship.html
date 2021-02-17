@@ -27,7 +27,7 @@
                 <div class="form_wrap company_reg_wrap">
                     <div class="top_block">
                         <img src="../assets/images/logo.jpg" alt="logo">
-                        <h2 class="job_text">As you have selected looking for job as your objectives,
+                        <h2 class="job_text">As you have selected looking for mentorship as your objectives,
                             Please fill required details</h2>
                         <!-- <p>Make the most of your professional life</p> -->
                     </div>
@@ -37,7 +37,7 @@
                         </div> -->
                         <div class="form_row">
                             <div id="output"></div>
-                            <select data-placeholder="Select Industry where looking for job Max 3 industries" name="tags[]" multiple class="chosen-select">
+                            <select data-placeholder="Select Industries where you find Leaders Max 3" name="tags[]" multiple class="chosen-select">
                                 <option value="Engineering">Engineering</option>
                                 <option value="Carpentry">Carpentry</option>
                                 <option value="Plumbing">Plumbing</option>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="form_row">
                             <div id="output"></div>
-                            <select data-placeholder="Select Functional area where you like to work max 3" name="tags[]" multiple class="chosen-select">
+                            <select data-placeholder="Select Functional area where you find experts max 3" name="tags[]" multiple class="chosen-select">
                                 <option value="Engineering">Engineering</option>
                                 <option value="Carpentry">Carpentry</option>
                                 <option value="Plumbing">Plumbing</option>
@@ -80,71 +80,20 @@
                                 <option value="Mechanical">Mechanical</option>
                                 <option value="HVAC">HVAC</option>
                               </select>
-                        </div>
-                        <div class="form_row">
-                            <div id="output"></div>
-                            <select data-placeholder="Select titles you designate select max 3" name="tags[]" multiple class="chosen-select">
-                                <option value="Engineering">Engineering</option>
-                                <option value="Carpentry">Carpentry</option>
-                                <option value="Plumbing">Plumbing</option>
-                                <option value="Electical">Electrical</option>
-                                <option value="Mechanical">Mechanical</option>
-                                <option value="HVAC">HVAC</option>
-                                 <option value="Engineering">Engineering</option>
-                                <option value="Carpentry">Carpentry</option>
-                                <option value="Plumbing">Plumbing</option>
-                                <option value="Electical">Electrical</option>
-                                <option value="Mechanical">Mechanical</option>
-                                <option value="HVAC">HVAC</option>
-                                 <option value="Engineering">Engineering</option>
-                                <option value="Carpentry">Carpentry</option>
-                                <option value="Plumbing">Plumbing</option>
-                                <option value="Electical">Electrical</option>
-                                <option value="Mechanical">Mechanical</option>
-                                <option value="HVAC">HVAC</option>
-                              </select>
-                        </div>
-                        <div class="form_row">
-                                <input type="text" placeholder="Current Location"> 
-                        </div>
-                        <div class="form_row">
-                            <input type="text" placeholder="Preferred Location Max 2 more or NONE">
-                        </div>
-                        <div class="form_row four_field checkwrap">
-                            <div class="form_item">
-                                <label>
-                                    <input type="checkbox">
-                                    <span>Full Time</span>
-                                </label>
-                            </div>
-                            <div class="form_item">
-                                <label>
-                                    <input type="checkbox">
-                                    <span>Part Time</span>
-                                </label>
-                            </div>   
-                            <div class="form_item">
-                                <label>
-                                    <input type="checkbox">
-                                    <span>Freelance</span>
-                                </label>
-                            </div>  
-                            <div class="form_item">
-                                <label>
-                                    <input type="checkbox">
-                                    <span>Contract</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <textarea placeholder="Skills you Have max 20 from auto select"></textarea>
-                        </div>
-                        <div class="form_row">
-                            <textarea placeholder="About Yourself"></textarea>
                         </div>
                         
+                        <div class="form_row">
+                            <textarea placeholder="Skills which u want to grow"></textarea>
+                        </div>
+                        
+                        
                         <div class="form_row submit_wrap">
-                            <div class="submit_btnWrap company_btn"><input type="submit" value="Next"></div>
+                            
+                            <div class="submit_btnWrap company_btn">
+                                <a href="#">Back</a>
+                                <!-- <input type="submit" value="Next"> -->
+                                <input type="submit" value="Finish">
+                            </div>
                             
                         </div>
                     </div>
@@ -155,6 +104,7 @@
     </div>
 </div>
 <script>
+// document.getElementsByClassName('output').innerHTML = location.search;
 $(".chosen-select").chosen();
 </script>
 
