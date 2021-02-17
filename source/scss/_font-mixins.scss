@@ -230,10 +230,10 @@
 	font-size: 26px;
 	font-weight: 400;
 	@include respond-below(md) {
-		font-size: 22px;
+		font-size: 26px;
 	}
 	@include respond-below(xxs) {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	@include respond-below(xxxs) {
 		font-size: 16px;
